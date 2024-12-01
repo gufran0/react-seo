@@ -12,9 +12,9 @@ const App = () => {
     <Router>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/posts/:slug" element={<Blogpost />} />
+          <Route path="/" element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/posts/:slug" element={<Blogpost />} />
           </Route>
         </Routes>
       </Suspense>

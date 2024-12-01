@@ -5,13 +5,13 @@ import Footer from './Footer'
 
 const Layout = ({children}) => {
   return (
-    <div>
+    <>
        <header>
         <Navbar></Navbar>
        </header>
         <Outlet/>
         <Footer></Footer>
-    </div>
+    </>
   )
 }
 
