@@ -1,12 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
 
-const Navbar = () => (
-  <nav className="bg-gray-800 text-white p-4">
-    <div className="container mx-auto">
-      <h1 className="text-2xl font-bold">My Blog</h1>
-    </div>
-  </nav>
-);
+const Navbar = () => {
+  return (
+    <div>Navbar</div>
+  )
+}
 
-export default Navbar;
+export default Navbar
