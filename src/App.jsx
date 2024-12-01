@@ -1,5 +1,5 @@
 // App.js
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
@@ -9,10 +9,12 @@ import Blogpost from "./pages/BlogPost";
 const App = () => {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/posts/:slug" element={<Blogpost />} />
-      </Routes>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/posts/:slug" element={<Blogpost />} />
+        </Routes>
+      </Suspense>
     </Router>
   );
 };
