@@ -8,6 +8,9 @@ import RobotTxt from "../assets/images/robot.png";
 import Mobile from "../assets/images/mobile.png";
 import Graph from "../assets/images/graph.png";
 import Js from "../assets/images/js.png";
+import Font from "../assets/images/font.png";
+import Tags from "../assets/images/tags.png";
+import Canonical from '../assets/images/canonical.png'
 export const posts = [
   {
     id: 1,
@@ -125,4 +128,42 @@ export const posts = [
     `,
     image: Js,
   },
+  {
+    id: 11,
+    title: "Font Preloading for Better Performance and SEO",
+    date: "2024-11-29",
+    slug: "font-preloading-seo",
+    content: `
+      <p>Font preloading is a simple yet highly effective technique for improving web performance and SEO.</p>
+      <p>By preloading only critical fonts, using modern formats like WOFF2, and leveraging the <code>font-display: swap</code> property, you can ensure your users experience faster load times and smoother content rendering.</p>
+      <p>Incorporating font preloading into your React app or website is a must for anyone striving to create a high-performing, SEO-friendly platform that delivers a seamless user experience.</p>
+    `,
+    image: Font,
+  },
+  {
+    id: 12,
+    title: "Creating an SEO-Friendly React Page with Best Practices",
+    date: "2024-11-29",
+    slug: "seo-friendly-react-page",
+    content: `
+      <p>Building an SEO-friendly React page involves combining proper content structuring, responsive design, and fast loading for a seamless user experience.</p>
+      <p>Using semantic HTML tags like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> improves accessibility and helps search engines understand the content better.</p>
+      <p>Styling with tools like Tailwind CSS ensures your page looks clean and professional while maintaining fast loading times. Incorporating SEO-friendly techniques like proper heading tags, focused content, and responsive design makes your React application stand out in search engine rankings.</p>
+      <p>By following these best practices, you can create a high-performing React page that delivers a great user experience while boosting SEO performance.</p>
+    `,
+    image: Tags,
+  },
+  {
+    id: 13,
+    title: "Understanding and Implementing Canonical Tags in React for SEO",
+    date: "2024-11-29",
+    slug: "react-canonical-tags-seo",
+    content: `
+      <p>Canonical tags are essential for managing duplicate content and improving the SEO of your website. They guide search engines to the preferred version of a page, ensuring the correct URL is indexed and ranked.</p>
+      <p>For instance, if you have pages with similar or identical content due to dynamic parameters or multiple categories, a canonical tag consolidates the ranking signals to a single URL. This helps avoid penalties for duplicate content.</p>
+      <p>Adding canonical tags in React can be done statically for global pages via the <code>public/index.html</code> file or dynamically using tools like <code>react-helmet</code> for individual pages.</p>
+      <p>Best practices include always using absolute URLs in canonical tags, testing their implementation with tools like Google Search Console, and ensuring each page has only one canonical tag. By implementing these practices, you can significantly enhance your React app's SEO and ensure consistent performance in search engine rankings.</p>
+    `,
+    image: Canonical,
+  }
 ];

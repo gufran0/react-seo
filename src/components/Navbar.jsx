@@ -12,7 +12,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Navigation Menu (Desktop) */}
+      
         <nav className="hidden md:flex space-x-8">
           <Link href="/">
             <span className="hover:text-blue-400">Home</span>

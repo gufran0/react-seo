@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
-const BlogPostMeta = ({ title, description, image, url, jsonLdData }) => {
+const BlogPostMeta = ({ title, description, image, url, jsonLdData,canonical }) => {
   return (
     <Helmet>
       {/* Page Title and Meta Description */}
@@ -13,6 +13,9 @@ const BlogPostMeta = ({ title, description, image, url, jsonLdData }) => {
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
       <meta property="og:url" content={url} />
+
+
+
       <meta property="og:type" content="article" />
       <meta property="og:site_name" content="My Blogs" />
 
@@ -22,6 +25,9 @@ const BlogPostMeta = ({ title, description, image, url, jsonLdData }) => {
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
       <meta name="twitter:site" content="@YourTwitterHandle" />
+
+
+      <link rel="canonical" href={canonical} />
 
       {/* JSON-LD Structured Data */}
       {jsonLdData && (

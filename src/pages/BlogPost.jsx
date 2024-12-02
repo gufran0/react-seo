@@ -14,6 +14,8 @@ const BlogPost = () => {
   }
 
   const jsonLdData = generateBlogPostJsonLd(post, slug);
+  const canonicalUrl = `https://yourwebsite.com/posts/${post.slug}`;
+ 
 
   return (
     <div className="bg-gray-50 pb-10">
@@ -22,7 +24,9 @@ const BlogPost = () => {
         description={post?.content || "Read this amazing blog post"}
         image={post.image}
         url={`https://yourwebsite.com/posts/${post.slug}`}
+        canonical = {canonicalUrl}
         jsonLdData={jsonLdData}
+        
       />
 
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-12">
