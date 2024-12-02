@@ -14,16 +14,16 @@ const Navbar = () => {
 
       
         <nav className="hidden md:flex space-x-8">
-          <Link href="/">
+          <Link to="/">
             <span className="hover:text-blue-400">Home</span>
           </Link>
-          <Link href="/about">
+          <Link to="/about">
             <span className="hover:text-blue-400">About</span>
           </Link>
-          <Link href="/services">
+          <Link to="/services">
             <span className="hover:text-blue-400">Services</span>
           </Link>
-          <Link href="/contact">
+          <Link to="/contact">
             <span className="hover:text-blue-400">Contact</span>
           </Link>
         </nav>
